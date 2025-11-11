@@ -9,15 +9,15 @@ Ideal for dashboards, SaaS landing pages, or modern interactive presentations wh
 
 ## ✨ Features
 
-🌌 Solar-system inspired design
-🪐 Multiple orbit rings with smooth rotations
-🎨 Gradient glow effects for a modern aesthetic
-📱 Fully responsive layout that adapts to all screens
-🧩 Modular structure—easy to modify orbit items
-🎥 Smooth, seamless animation with performance-friendly CSS
-🔧 Lightweight & reusable component
+- 🌌 Solar-system inspired design
+- 🪐 Multiple orbit rings with smooth rotations
+- 🎨 Gradient glow effects for a modern aesthetic
+- 📱 Fully responsive layout that adapts to all screens
+- 🧩 Modular structure—easy to modify orbit items
+- 🎥 Smooth, seamless animation with performance-friendly CSS
+- 🔧 Lightweight & reusable component
 
 ## 🔗 Live Demo
 
-Check out the live version here:
+- Check out the live version here:
 https://wondrous-toffee-2a7fb1.netlify.app/
