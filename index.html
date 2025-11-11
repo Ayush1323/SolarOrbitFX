@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Orbital Diagram</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="orbit-container">
+      <!-- SVG for tails -->
+      <svg
+        class="orbit-tails"
+        width="100%"
+        height="100%"
+        viewBox="0 0 1400 600"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <path
+          id="tail-recruitment"
+          stroke="#EC5AFE"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round"
+        />
+        <circle id="dot-start-recruitment" r="4" fill="#EC5AFE" />
+        <circle id="dot-end-recruitment" r="4" fill="#EC5AFE" />
+
+        <path
+          id="tail-crm"
+          stroke="#0042F9"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round"
+        />
+        <circle id="dot-start-crm" r="4" fill="#0042F9" />
+        <circle id="dot-end-crm" r="4" fill="#0042F9" />
+
+        <path
+          id="tail-reports"
+          stroke="#A8E665"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round"
+        />
+        <circle id="dot-start-reports" r="4" fill="#A8E665" />
+        <circle id="dot-end-reports" r="4" fill="#A8E665" />
+
+        <path
+          id="tail-people"
+          stroke="#FFB81C"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round"
+        />
+        <circle id="dot-start-people" r="4" fill="#FFB81C" />
+        <circle id="dot-end-people" r="4" fill="#FFB81C" />
+
+        <path
+          id="tail-project"
+          stroke="#00B5E2"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round"
+        />
+        <circle id="dot-start-project" r="4" fill="#00B5E2" />
+        <circle id="dot-end-project" r="4" fill="#00B5E2" />
+      </svg>
+
+      <!-- Orbital rings -->
+      <div class="orbit orbit-1"></div>
+      <div class="orbit orbit-2"></div>
+      <div class="orbit orbit-3"></div>
+      <div class="orbit orbit-4"></div>
+      <div class="orbit orbit-5"></div>
+      <div class="orbit orbit-6"></div>
+      <div class="orbit orbit-7"></div>
+
+      <!-- Center logo -->
+      <div class="center-logo">
+        <img src="./images/collab-crm.png" alt="" width="130" height="130" />
+      </div>
+
+      <!-- Module bubbles -->
+      <div class="orbit-path" id="recruitment-path">
+        <div class="module module-recruitment">CRM & Invoice</div>
+      </div>
+      <div class="orbit-path" id="crm-path">
+        <div class="module module-crm">Recruitment</div>
+      </div>
+      <div class="orbit-path" id="reports-path">
+        <div class="module module-reports">People Management</div>
+      </div>
+      <div class="orbit-path" id="people-path">
+        <div class="module module-people">Project Management</div>
+      </div>
+      <div class="orbit-path" id="project-path">
+        <div class="module module-project">Reports</div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  background: #f8f9fa;
+}
+
+.orbit-container {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1023px) {
+  .orbit-container {
+    display: none;
+  }
+}
+
+.orbit-container .orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.orbit-container .center-logo {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 130px;
+  height: 130px;
+  z-index: 10;
+}
+
+.orbit-container .module {
+  position: relative;
+  padding: 12px 24px;
+  background: white;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.orbit-container .module::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 25px;
+  background: linear-gradient(
+    90deg,
+    #0042f9,
+    #00b5e2,
+    #a8e665,
+    #ec5afe,
+    #ffb81c,
+    #0042f9
+  );
+  background-size: 300% 300%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: border-move 4s linear infinite;
+  z-index: -1;
+}
+
+@keyframes border-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+.orbit-container .orbit-path {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.orbit-container .orbit-tails {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Module-specific shadows */
+.orbit-container .module-recruitment {
+  box-shadow: 0 0 70px 6px rgba(236, 90, 254, 0.4);
+}
+
+.orbit-container .module-crm {
+  box-shadow: 0 0 70px 6px rgba(0, 66, 249, 0.35);
+}
+
+.orbit-container .module-reports {
+  box-shadow: 0 0 70px 6px rgba(168, 230, 101, 0.35);
+}
+
+.orbit-container .module-people {
+  box-shadow: 0 0 70px 6px rgba(255, 184, 28, 0.4);
+}
+
+.orbit-container .module-project {
+  box-shadow: 0 0 70px 6px rgba(0, 181, 226, 0.35);
+}
