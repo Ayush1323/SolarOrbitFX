@@ -1,4 +1,4 @@
-## SolarOrbitFX
+## 🪐 SolarOrbitFX
 
 OrbitUI System is a fully responsive orbit-style animation built with pure HTML & CSS, visualizing features as planets revolving around a central logo-just like a solar system.
 
