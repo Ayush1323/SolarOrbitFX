@@ -13,7 +13,7 @@ Ideal for dashboards, SaaS landing pages, or modern interactive presentations wh
 - 🪐 Multiple orbit rings with smooth rotations
 - 🎨 Gradient glow effects for a modern aesthetic
 - 📱 Fully responsive layout that adapts to all screens
-- 🧩 Modular structure—easy to modify orbit items
+- 🧩 Modular structure-easy to modify orbit items
 - 🎥 Smooth, seamless animation with performance-friendly CSS
 - 🔧 Lightweight & reusable component
 
